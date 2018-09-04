@@ -12,7 +12,7 @@
 <body>
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Computers</a>
+    <a class="navbar-brand" href="index.html" data-toggle="tooltip" data-placement="top" title="Go to Home Page">Computers</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,37 +20,34 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Hardware</a>
+          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Hardware Information">Hardware</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Software</a>
+          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="top" title="Software Information">Software</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Generations
+            Generations <span class="badge badge-info"> 6</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">I Generation</a>
-            <a class="dropdown-item" href="#">II Generation</a>
-            <a class="dropdown-item" href="#">III Generation</a>
-            <a class="dropdown-item" href="#">IV Generation</a>
-            <a class="dropdown-item" href="#">V Generation</a>
+            <a class="dropdown-item" href="#one">I Generation</a>
+            <a class="dropdown-item" href="#two">II Generation</a>
+            <a class="dropdown-item" href="#three">III Generation</a>
+            <a class="dropdown-item" href="#four">IV Generation</a>
+            <a class="dropdown-item" href="#five">V Generation</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Super Computers</a>
+            <a class="dropdown-item" href="#six">Super Computers</a>
           </div>
         </li>
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Type your query..." aria-label="Search">
-        <button type="button" class="btn btn-outline-info" >Search</button>
+        <button type="button" class="btn btn-outline-info" data-container="body" data-toggle="popover" title="Click to Search"  onclick="myFunction()">Search</button>
       </form>
     </div>
   </nav>
 
-  <!--
-  <picture class="image1"></picture>
-  -->
     <!--Carousel Starts-->
   <br><br>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -131,7 +128,7 @@
 
   <div class="row">
     <div class="col-sm-6 col-md-4">
-      <div class="card  mb-4">
+      <div class="card  mb-4"  id="one">
         <!-- set a width on the image otherwise it will expand to full width       -->
         <img class="card-img-top img-fluid" src="images/one.jpg" alt="Card image cap" width="700">
         <div class="card-body">
@@ -144,7 +141,7 @@
     </div>
     <!-- /.col-sm-4 -->
     <div class="col-sm-6 col-md-4">
-      <div class="card mb-4">
+      <div class="card mb-4" id="two">
         <!-- set a width on the image otherwise it will expand to full width       -->
         <img class="card-img-top img-fluid" src="images/second.jpg" alt="Card image cap" width="700">
         <div class="card-body">
@@ -156,7 +153,7 @@
     </div>
     <!-- /.col-sm-4 -->
     <div class="col-sm-6 col-md-4">
-      <div class="card mb-4">
+      <div class="card mb-4" id="three">
         <!-- set a width on the image otherwise it will expand to full width       -->
         <img class="card-img-top img-fluid" src="images/third.jpg" alt="Card image cap" width="700">
         <div class="card-body">
@@ -168,7 +165,7 @@
     </div>
    
     <div class="col-sm-6 col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3" id="four">
 
         <img class="card-img-top img-fluid" src="images/fourth.jpg" alt="Card image cap" width="700">
         <div class="card-body">
@@ -180,7 +177,7 @@
     <!-- /.col-sm-4 -->
 
     <div class="col-sm-6 col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3" id="five">
 
         <img class="card-img-top img-fluid" src="images/fifth.png" alt="Card image cap" width="700">
         <div class="card-body">
@@ -191,7 +188,7 @@
     </div>
 
     <div class="col-sm-6 col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-3" id="six">
 
         <img class="card-img-top img-fluid" src="images/sixth.jpg" alt="Card image cap" width="700">
         <div class="card-body">
@@ -223,7 +220,10 @@
   
   </footer>
   <!-- Footer -->
-
-
+  <script>
+    function myFunction() {
+        alert("Under maintenance");
+    }
+    </script>
 </body>
 </html>
